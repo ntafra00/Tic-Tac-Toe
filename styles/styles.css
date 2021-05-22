@@ -1,0 +1,75 @@
+:root{
+    --black:#000000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.restart-btn{
+    color: white;
+    background-color: tomato;
+    width: 100px;
+    height: 50px;
+}
+
+.restart-btn:hover{
+    transform: translateY(-2px);
+}
+
+.container{
+    margin: 50px auto;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.playground{
+    margin-top: 50px;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.field{
+    width: 150px;
+    height: 150px;
+    font-size: 80px;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turn{
+    font-size: 40px;
+    font-family: 'Chela One', cursive;
+}
+
+
+.winning-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;   
+}
+
+.winner{
+    font-size: 30px;
+    color: red;
+    margin-bottom: 20px;
+    font-family: 'Chela One', cursive;
+}
